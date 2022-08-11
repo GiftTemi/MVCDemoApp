@@ -9,8 +9,7 @@ namespace MVCDemoApp.Models
 {
     public class EmployeeDataAccessLayer
     {
-        string connectionString = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=myTestDB;Data Source=ANKIT-HP\\SQLEXPRESS";
-
+        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         //To View all employees details  
         public IEnumerable<Employee> GetAllEmployees()
         {
